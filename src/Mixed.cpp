@@ -64,6 +64,7 @@ Powered by Wasser
             ap.pause();
         }
         else if (cmd == "pausech" || cmd == ";;"){
+            state.clearScreen();
             int channel;
             std::cout << "Channel: ";
             std::cin >> channel;
@@ -74,6 +75,7 @@ Powered by Wasser
             ap.resume();
         }
         else if (cmd == "resumech" || cmd == ",,"){
+            state.clearScreen();
             int channel;
             std::cout << "Channel: ";
             std::cin >> channel;
@@ -84,6 +86,7 @@ Powered by Wasser
             ap.stop();
         }
         else if (cmd == "stopch" || cmd == "xx"){
+            state.clearScreen();
             int channel;
             std::cout << "Channel: ";
             std::cin >> channel;
@@ -103,8 +106,9 @@ Powered by Wasser
         }
         else if (cmd == "help"){
             state.clearScreen();
-            std::cout << "Commands: add/+ | play/. | pause/; | resume/, | next/] | prev/[ | exit/!\n" << "\n";
-            std::cout << "Commands FOR DEVS: DEBUG | NODEBUG \n" << "\n";
+            std::cout << "Commands: add/+ | play/. | pause/; | resume/, | next/] | prev/[ | exit/!" << "\n";
+            std::cout << "Channels Commands: playch/.. | resumech/,, | pausech/;; | stopch/xx\n";
+            std::cout << "\nCommands FOR DEVS: DEBUG | NODEBUG \n" << "\n";
         }
         else if (cmd == "DEBUG"){
             state.clearScreen();
