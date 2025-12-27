@@ -4,7 +4,7 @@
 
 ### Hello there
 
-this project is an Audio Engine, that is based in terminal, using the SDL_mixer and the Mini Audio libraries
+this project is an Audio Engine, that's terminal-based, using the SDL_mixer and the Mini Audio libraries
 it works clear and it´s inspired by a project called "Music_Player"
 
 it has an embedded player based on the two libraries used in this project
