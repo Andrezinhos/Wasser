@@ -49,12 +49,12 @@ void AudioPlayer::onSongEnded(){
 }
 
 bool AudioPlayer::isSongPresent(const std::string& song) const {
-    std::string path = "C:/WasserEngine/songs/" + song;
+    std::string path = "C:/Wasser/bin/songs/" + song;
     return fs::exists(path);
 }
 
 void AudioPlayer::addToQueue(const std::string& song) {
-    fs::path fullPath = "C:/WasserEngine/songs/" + song;
+    fs::path fullPath = "C:/Wasser/bin/songs/" + song;
     if(!isSongPresent(song)){
         std::cout << "Song not found consider checking the spellings" << "\n";
         return;
@@ -283,8 +283,8 @@ void AudioPlayer::delSong(const std::string& name){
         std::cout << "The current song was deleted" << "\n";
     }
     else if(result == 4){
-        history.delFromStack("../songs/"+name);
-        queue.deleteFromQueue("../songs/"+name);
+        history.delFromStack("../songs/" + name);
+        queue.deleteFromQueue("../songs/" + name);
         std::cout << "The song has been deleted" << "\n";
     }
     if(!isPaused) play();

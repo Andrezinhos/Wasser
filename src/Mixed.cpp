@@ -30,7 +30,7 @@ Powered by Wasser
             std::cout << "Type the music: ";
             std::cin >> song;
 
-            fs::path fullpath = "C:/WasserEngine/songs/" + song;
+            fs::path fullpath = "C:/Wasser/bin/songs/" + song;
             if (!fs::exists(fullpath)){
                 state.clearScreen();
                 std::cout << "Not founded the file\n";
@@ -52,7 +52,7 @@ Powered by Wasser
             std::cout << "Channel number (-1 for auto): ";
             std::cin >> channel;
 
-            fs::path fullpath = "C:/Wasser/songs/" + sound;
+            fs::path fullpath = "C:/Wasser/bin/songs/" + sound;
             if (!fs::exists(fullpath)){
                 state.clearScreen();
                 std::cout << "Not founded the file\n";
