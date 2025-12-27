@@ -1,0 +1,6 @@
+#sdl bin include and library
+bin/
+build/
+.mcht/
+#include/
+#lib/
